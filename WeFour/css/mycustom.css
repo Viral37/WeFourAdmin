@@ -1,0 +1,13 @@
+﻿.ddcss {
+    height: 30px;
+    max-height: 30px;
+    overflow-y: scroll;
+}
+
+.btncss {
+    margin: 5px;
+}
+
+.hederstyle {
+    text-align: center;
+}

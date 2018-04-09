@@ -1,0 +1,180 @@
+﻿
+        .col-centered {
+            width: 40%;
+            margin: auto;
+        }
+
+        @media only screen and (max-width: 768px) {
+            /* For mobile phones: */
+            .col-centered {
+                width: 100%;
+                margin: auto;
+            }
+        }
+
+        .col-centeredupdown {
+            width: 100%;
+            margin: auto;
+        }
+
+        .top-border {
+            border-top: 1px solid #ddd;
+        }
+
+        .bottom-border {
+            border-bottom: 2px double black;
+        }
+
+        .as-font-size-medium {
+            font-size: 2rem !important;
+        }
+
+        .move-right {
+            padding-left: 5px;
+        }
+
+        #cal-referral-rate-container {
+            position: absolute;
+            right: 0;
+            color: #999;
+        }
+
+        .as-tab {
+            box-sizing: border-box;
+        }
+
+        .drop_cat {
+            padding-top: 4px;
+            padding-bottom: 4px;
+            padding-left: 4px;
+            border-left: 1px solid gray;
+            border-right: 1px solid gray;
+            border-bottom: 1px solid gray;
+        }
+
+        .price-symbol:before {
+            content: '₹';
+            position: absolute;
+            font-size: 20px;
+            font-weight: 500;
+            top: 8px;
+            left: 20px;
+            margin-left: -3px;
+        }
+
+        .gms:before {
+            content: 'gms';
+            position: absolute;
+            font-size: 16px;
+            font-weight: 500;
+            top: 8px;
+            left: 270px;
+        }
+
+        .thblack {
+            background-color: black;
+            color: white;
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        .thwhite {
+            background-color: white;
+            border: none;
+        }
+
+        .tdblack {
+            border: 1px solid black;
+            text-align: center;
+            color:black;
+        }
+
+        .tbcells {
+            empty-cells: hide;
+        }
+
+        .divrate {
+            padding-top: 145px;
+        }
+   
+        /*
+ CSS for the main interaction
+*/
+        .tabset > input[type="radio"] {
+            position: absolute;
+            left: -200vw;
+        }
+
+        .tabset .tab-panel {
+            display: none;
+        }
+
+        .tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
+        .tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
+        .tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
+        .tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
+        .tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
+        .tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
+            display: block;
+        }
+
+        /*
+ Styling
+*/
+
+        .tabset > label {
+            position: relative;
+            display: inline-block;
+            padding: 12px 45px 22px;
+            border: 1px solid transparent;
+            border-bottom: 0;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+            .tabset > label::after {
+                content: "";
+                position: absolute;
+                left: 15px;
+                bottom: 10px;
+                width: 22px;
+                height: 4px;
+                background: #8d8d8d;
+            }
+
+            .tabset > label:hover,
+            .tabset > input:focus + label {
+                color: #06c;
+            }
+
+                .tabset > label:hover::after,
+                .tabset > input:focus + label::after,
+                .tabset > input:checked + label::after {
+                    background: #06c;
+                }
+
+        .tabset > input:checked + label {
+            border-color: #ccc;
+            border-bottom: 1px solid #fff;
+            margin-bottom: -1px;
+        }
+
+        .tab-panel {
+            padding: 30px 0;
+            border-top: 1px solid #ccc;
+        }
+
+        /*
+ Demo purposes only
+*/
+        *,
+        *:before,
+        *:after {
+            box-sizing: border-box;
+        }
+
+
+        .tabset {
+            max-width: 100%;
+        }
+    
